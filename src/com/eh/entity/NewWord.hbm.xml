@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.eh.entity.NewWord" table="eNewWord">
+		  <!-- 复合主键使用composite-id标签 -->  
+        <composite-id>  
+            <!-- key-property标签表示哪一些属性对应复合主键 -->  
+            <key-property name="uid" column="uid" type="int"></key-property>  
+            <key-property name="id" column="id" type="int"></key-property>  
+        </composite-id> 
+        
+        <property name="englishWord" column="englishWord"></property>
+		<property name="pa" column="pa"></property>
+		<property name="chineseWord" column="chineseWord"></property>
+		<property name="englishInstance1" column="englishInstance1"></property>
+		<property name="chineseInstance1" column="chineseInstance1"></property>
+		<property name="englishInstance2" column="englishInstance2"></property>
+		<property name="chineseInstance2" column="chineseInstance2"></property>
+		<property name="collect" column="collect"></property>
+		<property name="pron" column="pron"></property> 
+	</class>
+</hibernate-mapping>

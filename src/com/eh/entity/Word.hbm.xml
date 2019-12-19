@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.eh.entity.Word" table="eWord">
+		<id name="id" column="id">
+			<generator class="native"></generator>
+		</id>
+		<property name="englishWord" column="englishWord"></property>
+		<property name="pa" column="pa"></property>
+		<property name="chineseWord" column="chineseWord"></property>
+		<property name="englishInstance1" column="englishInstance1"></property>
+		<property name="chineseInstance1" column="chineseInstance1"></property>
+		<property name="englishInstance2" column="englishInstance2"></property>
+		<property name="chineseInstance2" column="chineseInstance2"></property>
+		<property name="collect" column="collect"></property>
+		<property name="pron" column="pron"></property>
+	</class>
+</hibernate-mapping>
